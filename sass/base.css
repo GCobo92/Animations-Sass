@@ -1,0 +1,13 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: beige;
+}
+
+.container {
+  display: flex;
+  margin: 5em;
+}
+/*# sourceMappingURL=base.css.map */
