@@ -1,48 +1,17 @@
-.btn {
-    width: 150px;
-    height: 40px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 1em;
+@keyframes opacity {
+    from {
+        opacity:.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
-    &--advise {
-        background-color: #FFC300;
-        &:hover {
-            transition:background-color 1s;
-            background-color: #FF8C00;
-        }
+@keyframes move-to-right {
+    from {
+        margin-left: 1em;
     }
-    &--danger {
-        background-color:#F0433A;
-        &:hover {
-            animation: opacity .8s infinite;
-            @keyframes opacity {
-                from {
-                    opacity:.1;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
-        }
-    }
-    &--normal {
-        background-color: #2980B9;
-        &:hover {
-            background-color: #2C3E50;
-            transition: background-color 2s;
-            animation: move-to-right  1s infinite;
-            @keyframes move-to-right {
-                from {
-                    margin-left: 1em;
-                }
-                to {
-                    margin-left: 2.5em;
-                }
-            }
-        }
+    to {
+        margin-left: 2.5em;
     }
 }
